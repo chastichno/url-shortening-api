@@ -1,0 +1,48 @@
+.main {
+  padding-top: 50px;
+
+  .section-title {
+    flex-direction: row-reverse;
+    @include breakpoint-down(small) {
+      flex-direction: column;
+    }
+
+    img {
+      width: 733px;
+      height: 482px;
+      @include breakpoint-down(small) {
+        height: 337px;
+        width: 510px;
+      }
+    }
+    .description {
+      flex-direction: column;
+      min-width: 40vw;
+      h1 {
+        font-size: 60px;
+        line-height: 65px;
+        color: $veryDarkBlue;
+        @include breakpoint-down(small) {
+          margin-top: 50px;
+          font-size: 42px;
+          line-height: 50px;
+          text-align: center;
+        }
+      }
+      p {
+        font-size: 1.1rem;
+        color: $grayishViolet;
+        @include breakpoint-down(small) {
+            margin-top: 30px;
+            text-align: center;
+          }
+      }
+      a {
+        @include breakpoint-down(small) {
+            margin-top: 40px;
+            text-align: center;
+          }
+      }
+    }
+  }
+}
