@@ -5,14 +5,12 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
-  overflow: hidden;
-  position: fixed;
-  padding: 45px 12vw;
-  @include breakpoint-down(small) {
-    padding: 45px 25px;
-  }
-}
+// body {
+//   padding: 45px 12vw;
+//   @include breakpoint-down(small) {
+//     padding: 45px 25px;
+//   }
+// }
 // Flexbox styles
 .flex {
   display: flex;

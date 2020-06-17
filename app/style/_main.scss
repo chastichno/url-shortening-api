@@ -2,14 +2,23 @@
   padding-top: 50px;
 
   .section-title {
-    flex-direction: row-reverse;
+    padding-left: 12vw;
     @include breakpoint-down(small) {
-      flex-direction: column;
+      padding: 25px;
+    }
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    flex-direction: row;
+    @include breakpoint-down(small) {
+      flex-direction: column-reverse;
     }
 
     img {
+      display: block;
       width: 733px;
       height: 482px;
+
       @include breakpoint-down(small) {
         height: 337px;
         width: 510px;
@@ -33,15 +42,15 @@
         font-size: 1.1rem;
         color: $grayishViolet;
         @include breakpoint-down(small) {
-            margin-top: 30px;
-            text-align: center;
-          }
+          margin-top: 30px;
+          text-align: center;
+        }
       }
       a {
         @include breakpoint-down(small) {
-            margin-top: 40px;
-            text-align: center;
-          }
+          margin-top: 40px;
+          text-align: center;
+        }
       }
     }
   }
