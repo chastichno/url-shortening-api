@@ -8,6 +8,7 @@
 
 body {
   overflow: hidden;
+  position: fixed;
   padding: 45px 12vw;
 }
 
